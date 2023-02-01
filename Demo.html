@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="Style.css"/>
+    <title>Todo app</title>
+</head>
+<body>
+    <div>
+    <div>
+    <h1>Todo Application</h1>
+    <form id="form" class="container" action="">
+        <label  for="Name">Name : </label>
+        <input  type="text" id="name" name="name" required><br><br>
+        <label  for="design">Profession : </label>
+        <input type="text" id="design" name="design" required><br><br>
+        <label for="exp" >Experience : </label>
+        <input  type="number" id="exp" name="exp" size="2" required><br><br>
+        <label  for="Date">Date of Joining</label>
+        <input type="date" id="date" name="date" required><br><br>
+        <input id="submit" onclick="OnAddClick()" class="bt" type="submit" name="Save" value="Save">
+        <br><br><br>
+    </form>
+    </div>
+    <div>
+    <table id="entry" >
+        <tr>
+            <th>Sr</th>
+            <th>Name</th>
+            <th>Profession</th>
+            <th>Experience</th>
+            <th>Date</th>
+            <th>Action</th>
+            <th>Edit</th>
+        </tr>
+    </table>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
